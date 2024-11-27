@@ -171,6 +171,13 @@ const Navbar = () => {
               >
                 <BsGithub />
               </a>
+              <a
+                href="tel:+989150707303"
+                target="_blank"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+              >
+                <BsPhone />
+              </a>
             </ul>
           </ul>
         </div>
