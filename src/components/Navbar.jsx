@@ -1,13 +1,6 @@
-import { div } from "framer-motion/client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import {
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsTelegram,
-  BsYoutube,
-} from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin, BsTelegram } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +8,24 @@ const Navbar = () => {
   const menuOpen = () => {
     setIsOpen(!isOpen);
   };
+
+  // تابعی برای بستن منو هنگام اسکرول
+  const handleScroll = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // ثبت رویداد اسکرول
+    window.addEventListener("scroll", handleScroll);
+
+    // تمیز کردن رویداد هنگام خروج از کامپوننت
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isOpen]);
+
   return (
     <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
       <a
@@ -119,18 +130,34 @@ const Navbar = () => {
           </ul>
           <ul>
             <ul className="flex flex-wrap gap-5">
-              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-                <BsYoutube />
-              </li>
-              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+              <a
+                href="https://t.me/omidkh_pr"
+                target="_blank"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100"
+              >
+                <BsTelegram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/omid-khatibiofficialy"
+                target="_blank"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100"
+              >
                 <BsLinkedin />
-              </li>
-              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-purple-500 hover:opacity-100">
+              </a>
+              <a
+                href="https://www.instagram.com/omidkhatibi__"
+                target="_blank"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-pink-500 hover:opacity-100"
+              >
                 <BsInstagram />
-              </li>
-              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+              </a>
+              <a
+                href="https://github.com/omidkhatibi1234"
+                target="_blank"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+              >
                 <BsGithub />
-              </li>
+              </a>
             </ul>
           </ul>
         </div>
