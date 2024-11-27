@@ -98,7 +98,7 @@ const Navbar = () => {
         <a
           href="tel:+989150707303"
           target="_blank"
-          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-green-500 hover:opacity-100"
         >
           <BsPhone />
         </a>
@@ -174,7 +174,7 @@ const Navbar = () => {
               <a
                 href="tel:+989150707303"
                 target="_blank"
-                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+                className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-green-500 hover:opacity-100"
               >
                 <BsPhone />
               </a>
