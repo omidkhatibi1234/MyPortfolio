@@ -1,7 +1,13 @@
 import { div } from "framer-motion/client";
 import { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTelegram,
+  BsYoutube,
+} from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,18 +50,34 @@ const Navbar = () => {
         </a>
       </ul>
       <ul className="hidden md:flex gap-10">
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-          <BsYoutube />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+        <a
+          href="https://t.me/omidkh_pr"
+          target="_blank"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100"
+        >
+          <BsTelegram />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/omid-khatibiofficialy"
+          target="_blank"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100"
+        >
           <BsLinkedin />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-purple-500 hover:opacity-100">
+        </a>
+        <a
+          href="https://www.instagram.com/omidkhatibi__"
+          target="_blank"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-pink-500 hover:opacity-100"
+        >
           <BsInstagram />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+        </a>
+        <a
+          href="https://github.com/omidkhatibi1234"
+          target="_blank"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+        >
           <BsGithub />
-        </li>
+        </a>
       </ul>
       {isOpen ? (
         <BiX onClick={menuOpen} className="block md:hidden text-4xl" />

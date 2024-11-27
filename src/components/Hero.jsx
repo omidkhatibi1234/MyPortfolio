@@ -32,10 +32,15 @@ const Hero = () => {
             Front-End Developer
           </h3>
           <p className="md:text-base text-pretty text-sm text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            corporis commodi atque nisi minus repellendus eveniet accusamus, hic
-            provident omnis aspernatur assumenda voluptas impedit temporibus
-            cumque rerum quia quis veritatis?
+            Hello there! My name is Omid, a passionate frontend web developer
+            and optimization enthusiast fluent in Persian and English. While my
+            primary goal is to consistently improve my skills and expand my
+            knowledge, I currently work as a freelancer, creating seamless user
+            experiences and fine-tuning website performance. However, I'm also
+            open to remove or in-person positions. In addition, I take pleasure
+            in sharing my experience with fellow developers and have been
+            willingly contributing to various developer communities on social
+            media platforms for a couple years now.
           </p>
         </motion.div>
       </div>
