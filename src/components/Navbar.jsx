@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsGithub, BsInstagram, BsLinkedin, BsTelegram } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsPhone,
+  BsTelegram,
+} from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,6 +94,13 @@ const Navbar = () => {
           className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
         >
           <BsGithub />
+        </a>
+        <a
+          href="tel:+989150707303"
+          target="_blank"
+          className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"
+        >
+          <BsPhone />
         </a>
       </ul>
       {isOpen ? (
