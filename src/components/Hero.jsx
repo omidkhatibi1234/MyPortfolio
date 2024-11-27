@@ -42,6 +42,11 @@ const Hero = () => {
             willingly contributing to various developer communities on social
             media platforms for a couple years now.
           </p>
+          <a href="../public/OmidKhatibi-Resume.pdf" download>
+            <button className="text-nowrap rounded-lg border border-indigo-600 bg-black px-10 py-3 text-sm font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-600 text-center mt-7">
+              Download Resume
+            </button>
+          </a>
         </motion.div>
       </div>
     </motion.div>
