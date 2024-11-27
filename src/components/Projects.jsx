@@ -1,48 +1,34 @@
-import myImg from "../assets/assets";
+import assets from "../assets/assets";
 import { motion } from "framer-motion";
 
 const projectsData = [
   {
-    image: myImg,
-    title: "Habit Tracker",
+    image: assets.paprika,
+    title: "Paprika Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
+      "This is a real project and developed for a client, with the front-end created by me using React.js and the back-end developed by my colleague using Express.",
+    technologies: ["Html", "Tailwind", "React.js", "MangoDB", "Express"],
   },
   {
-    image: myImg,
-    title: "Habit Tracker",
+    image: assets.realEstate,
+    title: "Real Estate",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
+      "This project was a practice project and is fully capable of connecting to the back end.",
+    technologies: ["Html", "Tailwind", "React.js", "Framer Motion"],
   },
   {
-    image: myImg,
-    title: "Habit Tracker",
+    image: assets.guessMyNumberGame,
+    title: "Guess My Number Game",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
+      "This project is programmed using Vanilla JavaScript and has a fun aspect, where you need to guess a number between 1 and 20 at each step.",
+    technologies: ["Html", "Css", "Javascript"],
   },
   {
-    image: myImg,
-    title: "Habit Tracker",
+    image: assets.myImg,
+    title: "To-Do List",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
-  },
-  {
-    image: myImg,
-    title: "Habit Tracker",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
-  },
-  {
-    image: myImg,
-    title: "Habit Tracker",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi architecto officia suscipit voluptatem libero excepturi sapiente ab possimus sed! Nesciunt dolorum voluptate, eos vero aut praesentium voluptas pariatur quia quo.",
-    technologies: ["Html", "Css", "Javascript", "MySQL"],
+      "This project is built using React.js and serves as a tool for reminding and managing daily tasks.",
+    technologies: ["Html", "Tailwind", "React.js"],
   },
 ];
 

@@ -1,9 +1,13 @@
 import myImg from "./omid.jpg";
-import projectImg00 from "./IMG_06.jpg";
+import paprika from "./paprika.jpg";
+import realEstate from "./real-estate.jpg";
+import guessMyNumberGame from "./guessMyNumberGame.jpg";
 
 const assets = {
   myImg,
-  projectImg00,
+  paprika,
+  realEstate,
+  guessMyNumberGame,
 };
 
 export default assets;

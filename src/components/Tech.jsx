@@ -55,7 +55,7 @@ const Tech = () => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
         >
-          <BiLogoReact className="text-blue-500 cursor-pointer text-[80px] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+          <BiLogoJavascript className="text-yellow-500 cursor-pointer text-[80px] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
         </motion.div>
         <motion.div
           variants={variants}
@@ -63,7 +63,7 @@ const Tech = () => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
         >
-          <BiLogoJavascript className="text-yellow-500 cursor-pointer text-[80px] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+          <BiLogoReact className="text-blue-500 cursor-pointer text-[80px] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
         </motion.div>
         <motion.div
           variants={variants}
