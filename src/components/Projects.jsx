@@ -8,6 +8,7 @@ const projectsData = [
     description:
       "This is a real project and developed for a client, with the front-end created by me using React.js and the back-end developed by my colleague using Express.",
     technologies: ["Html", "Tailwind", "React.js", "MangoDB", "Express"],
+    url: "https://www.paprika-protein.ir/",
   },
   {
     image: assets.realEstate,
@@ -15,6 +16,7 @@ const projectsData = [
     description:
       "This project was a practice project and is fully capable of connecting to the back end.",
     technologies: ["Html", "Tailwind", "React.js", "Framer Motion"],
+    url: "https://real-estate-smoky-seven.vercel.app/",
   },
   {
     image: assets.guessMyNumberGame,
@@ -22,6 +24,7 @@ const projectsData = [
     description:
       "This project is programmed using Vanilla JavaScript and has a fun aspect, where you need to guess a number between 1 and 20 at each step.",
     technologies: ["Html", "Css", "Javascript"],
+    url: "https://guess-number-game-alpha.vercel.app/",
   },
   {
     image: assets.myImg,
@@ -29,6 +32,7 @@ const projectsData = [
     description:
       "This project is built using React.js and serves as a tool for reminding and managing daily tasks.",
     technologies: ["Html", "Tailwind", "React.js"],
+    url: "",
   },
 ];
 
@@ -58,6 +62,13 @@ const ProjectCart = ({ project }) => {
           <div className="flex flex-col gap-3">
             <div className="text-xl font-semibold">{project.title}</div>
             <p className="text-gray-400">{project.description}</p>
+            <a
+              href={project.url}
+              target="_blank"
+              className="text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-sm shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-indigo-600 text-center"
+            >
+              View This Project
+            </a>
           </div>
           <div className="flex flex-wrap gap-5">
             {project.technologies.map((tech, index) => (
