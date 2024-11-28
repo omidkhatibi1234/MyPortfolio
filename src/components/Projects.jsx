@@ -27,12 +27,12 @@ const projectsData = [
     url: "https://guess-number-game-alpha.vercel.app/",
   },
   {
-    image: assets.myImg,
-    title: "To-Do List",
+    image: assets.todoList,
+    title: "To-Do List App",
     description:
       "This project is built using React.js and serves as a tool for reminding and managing daily tasks.",
     technologies: ["Html", "Tailwind", "React.js"],
-    url: "",
+    url: "https://todo-list-app-eta-murex.vercel.app/",
   },
 ];
 
@@ -65,7 +65,7 @@ const ProjectCart = ({ project }) => {
             <a
               href={project.url}
               target="_blank"
-              className="text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-sm shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-indigo-600 text-center"
+              className="text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-md font-bold text-white shadow-sm shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-indigo-600 text-center"
             >
               View This Project
             </a>
